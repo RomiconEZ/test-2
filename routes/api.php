@@ -34,7 +34,6 @@ Route::group([
 
 Route::group([
     'namespace'=>'App\Http\Controllers\User',
-    'middleware'=>'jwt.auth',
 ], function(){
     Route::get('/doctors', 'IndexController');
     //Route::get('/users/create', 'CreateController');
@@ -47,15 +46,14 @@ Route::group([
 
 Route::group([
     'namespace'=>'App\Http\Controllers\PatientInfo',
-    'middleware'=>'jwt.auth',
 ], function(){
     Route::get('/patients', 'IndexController');
     //Route::get('/patients/create', 'CreateController');
-    Route::post('/patients', 'StoreController');
-    Route::get('/patients/{patient}', 'ShowController');
+    Route::post('/newpatient', 'StoreController');
+    Route::get('/patients/{id}', 'ShowController');
     //Route::get('/patients/{patient}/edit', 'EditController');
-    Route::patch('/patients/{patient}', 'UpdateController');
-    Route::delete('/patients/{patient}', 'DeleteController');
+    Route::patch('/patients/{id}', 'UpdateController');
+    Route::delete('/patients/{id}', 'DeleteController');
 });
 
 
