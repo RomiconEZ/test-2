@@ -18,17 +18,16 @@ class PatientInfoZGLResource extends JsonResource
     {
         $patient = $this->resource;
         return [
-                    'id'             => 1,
-                    'name'           => "Иван",
-                    'surname'        => "Щеглов",
-                    'patronymic'     => "Павлович",
-                    'birthdate'      => "1995-10-11",
-                    'sex'            => 1,
-                    'age'            => 27,
-                    'region'        => "Северо-западный регион",
-                    'city'          => "Санкт-Петербург",
-                    'residenseregion'   => "Северо-западный регион",
-                ];
-
+            'id'             => 1,
+            'name'           => "Иван",
+            'surname'        => "Щеглов",
+            'patronymic'     => "Павлович",
+            'birthdate'      => "1995-10-11",
+            'sex'            => 1,
+            'age'            => 27,
+            'region'        => "Северо-западный регион",
+            'city'          => "Санкт-Петербург",
+            'residenseregion'   => "Северо-западный регион",
+        ];
     }
 }

@@ -20,29 +20,29 @@ class UserResource extends JsonResource
         $user = $this->resource;
         //$clinic = Clinic();
         return [
-                    'id'            => $user->id,
-                    'email'         => $user->email,
-                    'name'          => $user->Name,
-                    'surname'       => $user->Surname,
-                    'patronymic'    => $user->Patronymic,
-                    'birthdate'     => $user->BirthDate,
-                    'sex'           => $user->Sex,
-                    //'ClinicID'      => $user->Clinic->region,
-                    'region'        => "Северо-западный регион",
-                    //'region'        => $user->clinic()->Region,
-                    //'city'          => $user->clinic()->City,
-                    //'placeOfWork'   => $user->clinic()->Name,
-                    'city'        => "Санкт-Петербург",
-                    'placeOfWork'        => "СПБГУ",
+            'id'            => $user->id,
+            'email'         => $user->email,
+            'name'          => $user->Name,
+            'surname'       => $user->Surname,
+            'patronymic'    => $user->Patronymic,
+            'birthdate'     => $user->BirthDate,
+            'sex'           => $user->Sex,
+            //'ClinicID'      => $user->Clinic->region,
+            'region'        => "Северо-западный регион",
+            //'region'        => $user->clinic()->Region,
+            //'city'          => $user->clinic()->City,
+            //'placeOfWork'   => $user->clinic()->Name,
+            'city'        => "Санкт-Петербург",
+            'placeOfWork'        => "СПБГУ",
 
-                    //'RoleID'        => $user->RoleID,
-                    'role'          => $user->RoleID,
+            //'RoleID'        => $user->RoleID,
+            'role'          => $user->RoleID,
 
-                    //'OccupationID'  => $user->OccupationID,
-                    //'occupation'    => $user->occupation('OccupationID')->Value,
-                    'occupation'    => "главный врач",
+            //'OccupationID'  => $user->OccupationID,
+            //'occupation'    => $user->occupation('OccupationID')->Value,
+            'occupation'    => "главный врач",
 
-                    'workExperience'=> $user->WorkExperience,
-                ];
+            'workExperience'=> $user->WorkExperience,
+        ];
     }
 }
